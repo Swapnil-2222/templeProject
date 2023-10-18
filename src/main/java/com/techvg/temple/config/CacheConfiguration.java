@@ -38,6 +38,10 @@ public class CacheConfiguration {
         return cm -> {
             createCache(cm, com.techvg.temple.repository.UserRepository.USERS_BY_LOGIN_CACHE);
             createCache(cm, com.techvg.temple.repository.UserRepository.USERS_BY_EMAIL_CACHE);
+            createCache(cm, com.techvg.temple.domain.Activity.class.getName());
+            createCache(cm, com.techvg.temple.domain.Delegate.class.getName());
+            createCache(cm, com.techvg.temple.domain.Shop.class.getName());
+            createCache(cm, com.techvg.temple.domain.Hotel.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

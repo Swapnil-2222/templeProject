@@ -93,7 +93,7 @@ entity Shop {
   name String
   description String
   product String
-  size String
+  productSize String
   price Double
   emailId String
   contactPerson String
